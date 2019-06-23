@@ -19,6 +19,12 @@
     },
     "api-interface": {
       "tags": []
+    },
+    "desk-admin": {
+      "tags": ["acl:admin"]
+    },
+    "desk-admin-e2e": {
+      "tags": []
     }
   }
 }
