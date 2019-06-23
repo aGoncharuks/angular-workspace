@@ -25,6 +25,9 @@
     },
     "desk-admin-e2e": {
       "tags": []
+    },
+    "shared-screen": {
+      "tags": []
     }
   }
 }
