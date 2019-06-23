@@ -34,6 +34,9 @@
     },
     "desk-public-e2e": {
       "tags": []
+    },
+    "lazy-screen-admin": {
+      "tags": ["acl:admin"]
     }
   }
 }

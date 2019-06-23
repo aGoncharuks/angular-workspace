@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@desk/api-interface": ["libs/api-interface/src/index.ts"],
-      "@desk/shared-screen": ["libs/shared-screen/src/index.ts"]
+      "@desk/shared-screen": ["libs/shared-screen/src/index.ts"],
+      "@desk/lazy-screen-admin": ["libs/lazy-screen-admin/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

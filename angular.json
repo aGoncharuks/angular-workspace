@@ -466,6 +466,37 @@
           }
         }
       }
+    },
+    "lazy-screen-admin": {
+      "root": "libs/lazy-screen-admin",
+      "sourceRoot": "libs/lazy-screen-admin/src",
+      "projectType": "library",
+      "prefix": "desk",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/lazy-screen-admin/tsconfig.lib.json",
+              "libs/lazy-screen-admin/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/builders:jest",
+          "options": {
+            "jestConfig": "libs/lazy-screen-admin/jest.config.js",
+            "tsConfig": "libs/lazy-screen-admin/tsconfig.spec.json",
+            "setupFile": "libs/lazy-screen-admin/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {
