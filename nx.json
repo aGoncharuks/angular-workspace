@@ -28,6 +28,12 @@
     },
     "shared-screen": {
       "tags": []
+    },
+    "desk-public": {
+      "tags": []
+    },
+    "desk-public-e2e": {
+      "tags": []
     }
   }
 }
