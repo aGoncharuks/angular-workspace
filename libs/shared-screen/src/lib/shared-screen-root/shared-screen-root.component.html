@@ -1,3 +1,6 @@
-<p>
-  shared-screen-root works!
-</p>
+<div>Shared screen data:</div>
+<div *ngIf="(data$ | async) as data">
+  <div *ngFor="let item of data.items">
+    {{item}}
+  </div>
+</div>
