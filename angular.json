@@ -22,8 +22,14 @@
             "main": "apps/desk/src/main.ts",
             "polyfills": "apps/desk/src/polyfills.ts",
             "tsConfig": "apps/desk/tsconfig.app.json",
-            "assets": ["apps/desk/src/favicon.ico", "apps/desk/src/assets"],
-            "styles": ["apps/desk/src/styles.scss"],
+            "assets": [
+              "apps/desk/src/favicon.ico",
+              "apps/desk/src/assets"
+            ],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "apps/desk/src/styles.scss"
+            ],
             "scripts": [],
             "es5BrowserSupport": true
           },
@@ -79,7 +85,9 @@
               "apps/desk/tsconfig.app.json",
               "apps/desk/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -114,7 +122,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/desk-e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -132,7 +142,9 @@
             "outputPath": "dist/apps/api",
             "main": "apps/api/src/main.ts",
             "tsConfig": "apps/api/tsconfig.app.json",
-            "assets": ["apps/api/src/assets"]
+            "assets": [
+              "apps/api/src/assets"
+            ]
           },
           "configurations": {
             "production": {
@@ -162,7 +174,9 @@
               "apps/api/tsconfig.app.json",
               "apps/api/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -187,7 +201,9 @@
               "libs/api-interface/tsconfig.lib.json",
               "libs/api-interface/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -223,7 +239,9 @@
               "apps/desk-admin/src/favicon.ico",
               "apps/desk-admin/src/assets"
             ],
-            "styles": ["apps/desk-admin/src/styles.scss"],
+            "styles": [
+              "apps/desk-admin/src/styles.scss"
+            ],
             "scripts": [],
             "es5BrowserSupport": true
           },
@@ -278,7 +296,9 @@
               "apps/desk-admin/tsconfig.app.json",
               "apps/desk-admin/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -313,7 +333,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/desk-admin-e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -331,7 +353,9 @@
               "libs/shared-screen/tsconfig.lib.json",
               "libs/shared-screen/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -372,7 +396,9 @@
               "apps/desk-public/src/favicon.ico",
               "apps/desk-public/src/assets"
             ],
-            "styles": ["apps/desk-public/src/styles.scss"],
+            "styles": [
+              "apps/desk-public/src/styles.scss"
+            ],
             "scripts": [],
             "es5BrowserSupport": true
           },
@@ -427,7 +453,9 @@
               "apps/desk-public/tsconfig.app.json",
               "apps/desk-public/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -462,7 +490,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/desk-public-e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -480,7 +510,9 @@
               "libs/lazy-screen-admin/tsconfig.lib.json",
               "libs/lazy-screen-admin/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -521,7 +553,9 @@
               "apps/desk-react/src/favicon.ico",
               "apps/desk-react/src/assets"
             ],
-            "styles": ["apps/desk-react/src/styles.scss"],
+            "styles": [
+              "apps/desk-react/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -567,7 +601,9 @@
               "apps/desk-react/tsconfig.app.json",
               "apps/desk-react/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -601,7 +637,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/desk-react-e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -619,7 +657,9 @@
               "libs/shared-components/tsconfig.lib.json",
               "libs/shared-components/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {

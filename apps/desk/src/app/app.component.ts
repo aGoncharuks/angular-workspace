@@ -1,6 +1,4 @@
 import { Component } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
-import { Message } from "@desk/api-interface";
 
 @Component({
   selector: "desk-root",
@@ -8,6 +6,15 @@ import { Message } from "@desk/api-interface";
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
-  hello$ = this.http.get<Message>("/api/hello");
-  constructor(private http: HttpClient) {}
+  navLinks = [
+    {
+      path: 'display-server-data',
+      label: 'Display Server Data'
+    },
+    {
+      path: 'shared-screen',
+      label: 'Shared Screen'
+    }
+  ];
+  constructor() {}
 }

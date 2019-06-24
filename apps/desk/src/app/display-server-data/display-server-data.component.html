@@ -1,0 +1,4 @@
+<div *ngIf="(hello$ | async) as data; else spinner">Server data: {{data | json}}</div>
+<ng-template #spinner>
+  <mat-spinner></mat-spinner>
+</ng-template>
