@@ -37,6 +37,12 @@
     },
     "lazy-screen-admin": {
       "tags": ["acl:admin"]
+    },
+    "desk-react": {
+      "tags": []
+    },
+    "desk-react-e2e": {
+      "tags": []
     }
   }
 }

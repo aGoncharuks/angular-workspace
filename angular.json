@@ -497,6 +497,114 @@
           "styleext": "scss"
         }
       }
+    },
+    "desk-react": {
+      "root": "apps/desk-react/",
+      "sourceRoot": "apps/desk-react/src",
+      "projectType": "application",
+      "prefix": "desk",
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "style": "scss"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@nrwl/builders:web-build",
+          "options": {
+            "outputPath": "dist/apps/desk-react",
+            "index": "apps/desk-react/src/index.html",
+            "main": "apps/desk-react/src/main.tsx",
+            "polyfills": "apps/desk-react/src/polyfills.ts",
+            "tsConfig": "apps/desk-react/tsconfig.app.json",
+            "assets": [
+              "apps/desk-react/src/favicon.ico",
+              "apps/desk-react/src/assets"
+            ],
+            "styles": ["apps/desk-react/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/desk-react/src/environments/environment.ts",
+                  "with": "apps/desk-react/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/builders:web-dev-server",
+          "options": {
+            "buildTarget": "desk-react:build"
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "desk-react:build:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/desk-react/tsconfig.app.json",
+              "apps/desk-react/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/builders:jest",
+          "options": {
+            "jestConfig": "apps/desk-react/jest.config.js",
+            "tsConfig": "apps/desk-react/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "desk-react-e2e": {
+      "root": "apps/desk-react-e2e",
+      "projectType": "application",
+      "prefix": "",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/builders:cypress",
+          "options": {
+            "cypressConfig": "apps/desk-react-e2e/cypress.json",
+            "tsConfig": "apps/desk-react-e2e/tsconfig.e2e.json",
+            "devServerTarget": "desk-react:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "desk-react:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "apps/desk-react-e2e/tsconfig.e2e.json",
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
     }
   },
   "cli": {
