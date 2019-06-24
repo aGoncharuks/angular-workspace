@@ -1,20 +1,10 @@
-# Desk
+# angular-workspace
 
-This project was generated using [Nx](https://nx.dev).
+Workspace for experimenting with best practices building multi-application platform in Angular and related technologies
 
-<p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" width="450"></p>
+## Generate application
 
-🔎 **Nx is a set of Angular CLI power-ups for modern development.**
-
-## Quick Start & Documentation
-
-[30-minute video showing all Nx features](https://nx.dev/getting-started/what-is-nx)
-
-[Interactive tutorial](https://nx.dev/tutorial/01-create-application)
-
-## Generate your first application
-
-Run `ng g app myapp` to generate an application. When using Nx, you can create multiple applications and libraries in the same CLI workspace.
+Run `ng g app myapp` to generate an application.
 
 ## Development server
 
